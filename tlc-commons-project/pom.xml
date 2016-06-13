@@ -8,7 +8,7 @@
     <version>2</version>
   </parent>
   <groupId>com.thelastcheck.commons</groupId>
-  <artifactId>tlc-commons-project</artifactId>
+  <artifactId>shg-tlc-commons-project</artifactId>
   <version>2.3.0</version>
   <packaging>pom</packaging>
   <name>tlc-commons-project</name>
@@ -38,6 +38,18 @@
     <developerConnection>scm:git:https://github.com/TheLastCheck/tlc.open.java.git</developerConnection>
     <url>https://github.com/TheLastCheck/tlc.open.java.git</url>
   </scm>
+  <distributionManagement>
+    <repository>
+      <id>artifactory</id>
+      <name>maven.shg.io</name>
+      <url>http://maven.shg.io:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>artifactory</id>
+      <name>maven.shg.io</name>
+      <url>http://maven.shg.io:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
   <modules>
     <module>tlc-commons-buffer</module>
     <module>tlc-commons-base</module>
