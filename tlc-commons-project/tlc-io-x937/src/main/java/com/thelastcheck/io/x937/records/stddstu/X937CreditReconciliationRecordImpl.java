@@ -86,112 +86,123 @@ public class X937CreditReconciliationRecordImpl extends X937CreditReconciliation
 
     @Override
     public String externalProcessingCode() {
-        return super.externalProcessingCode();
+        return getFieldAsString(field(3));
     }
 
     @Override
     public X937CreditReconciliationRecord externalProcessingCode(String value) {
-        return super.externalProcessingCode(value);
+        setField(value, field(3));
+        return this;
     }
 
     @Override
     public RoutingNumber payorBankRoutingNumber() {
-        return super.payorBankRoutingNumber();
+        return getFieldAsRoutingNumber(field(4));
     }
 
     @Override
     public X937CreditReconciliationRecord payorBankRoutingNumber(RoutingNumber value) {
-        return super.payorBankRoutingNumber(value);
+        setField(value, field(4));
+        return this;
     }
 
     @Override
     public String payorBankRoutingNumberAsString() {
-        return super.payorBankRoutingNumberAsString();
+        return getFieldAsString(field(4));
     }
 
     @Override
     public X937CreditReconciliationRecord payorBankRoutingNumber(String value) {
-        return super.payorBankRoutingNumber(value);
+        setField(value, field(4));;
+        return this;
     }
 
     @Override
     public String creditAccountNumberOnUs() {
-        return super.creditAccountNumberOnUs();
+        return getFieldAsString(field(5));
     }
 
     @Override
     public X937CreditReconciliationRecord creditAccountNumberOnUs(String value) {
-        return super.creditAccountNumberOnUs(value);
+        setField(value, field(5));
+        return this;
     }
 
     @Override
     public long itemAmountAsLong() throws InvalidDataException {
-        return super.itemAmountAsLong();
+        return getFieldAsLong(field(6));
     }
 
     @Override
     public X937CreditReconciliationRecord itemAmount(long value) {
-        return super.itemAmount(value);
+        setField(value, field(6));
+        return this;
     }
 
     @Override
     public String ECEInstitutionItemSequenceNumber() {
-        return super.ECEInstitutionItemSequenceNumber();
+        return getFieldAsString(field(7));
     }
 
     @Override
     public X937CreditReconciliationRecord ECEInstitutionItemSequenceNumber(String value) {
-        return super.ECEInstitutionItemSequenceNumber(value);
+        setField(value,field(7));
+        return this;
     }
 
     @Override
     public String documentationTypeIndicator() {
-        return super.documentationTypeIndicator();
+        return getFieldAsString(field(8));
     }
 
     @Override
     public X937CreditReconciliationRecord documentationTypeIndicator(String value) {
-        return super.documentationTypeIndicator(value);
+        setField(value, field(8));
+        return this;
     }
 
     @Override
     public String typeOfAccountCode() {
-        return super.typeOfAccountCode();
+        return getFieldAsString(field(9));
     }
 
     @Override
     public X937CreditReconciliationRecord typeOfAccountCode(String value) {
-        return super.typeOfAccountCode(value);
+        setField(value, field(9));
+        return this;
     }
 
     @Override
     public String sourceOfWorkCode() {
-        return super.sourceOfWorkCode();
+        return getFieldAsString(field(10));
     }
 
     @Override
     public X937CreditReconciliationRecord sourceOfWorkCode(String value) {
-        return super.sourceOfWorkCode(value);
+        setField(value, field(10));
+        return this;
     }
 
     @Override
     public String workType() {
-        return super.workType();
+        return getFieldAsString(field(11));
     }
 
     @Override
     public X937CreditReconciliationRecord workType(String value) {
-        return super.workType(value);
+        setField(value, field(11));
+        return this;
     }
 
     @Override
     public String debitCreditIndicator() {
-        return super.debitCreditIndicator();
+        return getFieldAsString(field(12));
     }
 
     @Override
     public X937CreditReconciliationRecord debitCreditIndicator(String value) {
-        return super.debitCreditIndicator(value);
+        setField(value, field(12));
+        return this;
     }
 
     @Override

@@ -66,7 +66,8 @@ public abstract class X9RecordImpl extends RecordImpl implements X9Record {
 	 *            locations.
 	 */
 	public X9RecordImpl(int recordType, String encoding, int stdLevel) {
-		super(80, encoding);
+		super(800, encoding);
+		System.out.println("***************************SETTTING TO 800 *********************************************");
 		clearRecord();
 		recordStandardLevel(stdLevel);
 		recordType(recordType);
